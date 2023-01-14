@@ -1,0 +1,52 @@
+.floatTOC {
+  transition: 0.2s all ease;
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  border: none;
+  background: #f6f6f6;
+  font-size: 0.8em;
+  max-width: 10em;
+  padding: 1.2em;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.floatTOC ul ul {
+  margin: 0 0 0 0.75em;
+}
+.floatTOC:hover {
+  max-width: 1000em;
+  overflow: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.floatTOC > * {
+  transition: 0.2s all ease;
+  opacity: 0.5;
+}
+.floatTOC:hover > * {
+  opacity: 1;
+}
+.floatTOC .tocnumber {
+  display: none;
+}
+.floatTOC a {
+  color: #000;
+}
+.floatTOC .toctoggle {
+  display: none;
+}
+.floatTOC #toctitle {
+  display: none;
+}
+@media screen and (min-width: 601px) {
+  div.toc.floatTOC {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.toc.floatTOC {
+    display: none;
+  }
+}
